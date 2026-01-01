@@ -1,10 +1,8 @@
-import React from 'react';
-
 import { ControlsTab } from '@webrcade/app-common';
 
 export class GamepadControlsTab extends ControlsTab {
   render() {
-    const { type } = this.props;
+    // const { type } = this.props;
     return ([
       this.renderControl('start', 'Start'),
       this.renderControl('select', 'Select'),
@@ -20,7 +18,7 @@ export class GamepadControlsTab extends ControlsTab {
 
 export class KeyboardControlsTab extends ControlsTab {
   render() {
-    const { type } = this.props;
+    // const { type } = this.props;
     return ([
       this.renderKey('Enter', 'Start'),
       this.renderKey('ShiftRight', 'Select'),
