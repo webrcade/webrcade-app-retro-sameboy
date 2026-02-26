@@ -7,7 +7,7 @@ This repository contains [webЯcade](https://www.webrcade.com) applications for 
 * [Nintendo Game Boy Color](#nintendo-game-boy-color-application)
 * [Nintendo Game Boy](#nintendo-game-boy-application)
 
-The underlying emulators is a forked version of [SameBoy](https://github.com/LIJI32/SameBoy).
+The underlying emulators are forked versions of [SameBoy](https://github.com/LIJI32/SameBoy).
 
 ## Nintendo Game Boy Color Application
 
