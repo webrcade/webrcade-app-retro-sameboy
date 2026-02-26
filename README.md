@@ -51,4 +51,4 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 ---
 
-The license presented above is limited to the application for [webЯcade](https://www.webrcade.com). The underlying [SameBoy](https://github.com/LIJI32/SameBoy) projects retain their own specific licensing.
+The license presented above is limited to the application for [webЯcade](https://www.webrcade.com). The underlying [SameBoy](https://github.com/LIJI32/SameBoy) project retains its own specific licensing.
