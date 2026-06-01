@@ -100,6 +100,11 @@ export class Emulator extends RetroAppWrapper {
     }
   }
 
+  getHashFileExtension() {
+    const type = this.getProps().type;
+    return type === 'retro-sameboy-gb' ? 'gb' : 'gbc';
+  }
+
   getScriptUrl() {
     return 'js/sameboy_libretro.js';
   }
