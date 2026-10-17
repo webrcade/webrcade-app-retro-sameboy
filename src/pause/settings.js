@@ -9,6 +9,10 @@ import {
   ShaderSettingsTab,
 } from '@webrcade/app-common';
 
+// TODO - copy-pasted from an NES-family app as a starting template for the
+// on-screen-controls feature and never renamed. Works fine (name is
+// consistent everywhere it's referenced), just confusing - rename to
+// something Game Boy-specific (e.g. GameBoySettingsEditor).
 export class NesSettingsEditor extends Component {
   constructor() {
     super();
@@ -29,6 +33,8 @@ export class NesSettingsEditor extends Component {
       bilinearMode: emulator.getPrefs().getBilinearMode(),
       origScreenSize: emulator.getPrefs().getScreenSize(),
       screenSize: emulator.getPrefs().getScreenSize(),
+      origScreenControls: emulator.getPrefs().getScreenControls(),
+      screenControls: emulator.getPrefs().getScreenControls(),
     }
 
     this.shaderService = this.props.emulator.getShadersService();
@@ -102,6 +108,11 @@ export class NesSettingsEditor extends Component {
           if (values.origScreenSize !== values.screenSize) {
             emulator.getPrefs().setScreenSize(values.screenSize);
             emulator.updateScreenSize();
+            change = true;
+          }
+          if (values.origScreenControls !== values.screenControls) {
+            emulator.getPrefs().setScreenControls(values.screenControls);
+            emulator.updateOnScreenControls();
             change = true;
           }
           if (change) {
